@@ -1,0 +1,181 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage2.master.cs" Inherits="MasterPage2" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=device-width initial-scale=0.3">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>厦门软件职业技术学院</title>
+
+    <!-- Bootstrap -->
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css"/>
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="lib/html5shiv/html5shiv.min.js"></script>
+    <script src="lib/respond/respond.min.js"></script>
+    <![endif]-->
+    <link rel="stylesheet" href="css/mode.css">
+    <link rel="stylesheet" href="css/imgStyle.css">
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+
+</head>
+<body>
+<div class="logo">
+    <div class="top">
+        <div class="logoImg">
+            <img src="images/logo.png" width="471" border="0" alt="">
+        </div>
+        <div class="col-lg-3">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请搜索关键词">
+                <span class="input-group-btn">
+        <button class="btn btn-default" type="button">Go</button>
+      </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav>
+    <ul id="nav1">
+        <li class="navList"><a href="#">首页</a></li>
+        <li class="navList"><a href="userManager.aspx">用户管理</a>
+            <ul class="dropDwon">
+                <li><a href="userManager.aspx">查询用户</a></li>
+                <li><a href="addUser.aspx">添加用户</a></li>
+                <li><a href="userManager.aspx">修改用户</a></li>
+                <li><a href="userManager.aspx">删除用户</a></li>
+            </ul>
+        </li>
+        <li class="navList"><a href="newsManager.aspx">新闻管理</a>
+            <ul class="dropDwon">
+                <li><a href="newsManager.aspx">查询新闻</a></li>
+                <li><a href="addNews.aspx">添加新闻</a></li>
+                <li><a href="newsManager.aspx">修改新闻</a></li>
+                <li><a href="newsManager.aspx">删除新闻</a></li>
+            </ul>
+        </li>
+        <li class="navList"><a href="userManager.aspx">查询用户</a></li>
+        <li class="navList"><a href="addUser.aspx">添加用户</a> </li>
+        <li class="navList"><a href="userManager.aspx">修改用户</a></li>
+        <li class="navList"><a href="userManager.aspx">删除用户</a></li>
+        <li class="navList"><a href="newsManager.aspx">查询新闻</a></li>
+        <li class="navList"><a href="addNews.aspx">添加新闻</a></li>
+        <li class="navList"><a href="newsManager.aspx">修改新闻</a></li>
+        <li class="navList"><a href="newsManager.aspx">删除新闻</a></li>
+        <li class="navList"><a href="login.aspx">登录</a>
+        </li>
+    </ul>
+</nav>
+
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" 
+            EnableViewState="False">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+
+
+<footer>
+    <div class="bottomCenter">
+        <ul class="fastLink">
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">学院概要</a>
+                <p class="linkContent">
+                    <a href="#">学院简介</a><br>
+                    <a href="#">管理团队</a><br>
+                    <a href="#">办学理念</a><br>
+                    <a href="#">学院荣誉</a><br>
+                </p>
+            </li>
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">院系设置</a>
+                <p class="linkContent">
+                    <a href="#">软件工程系</a><br>
+                    <a href="#">电子信息工程系</a><br>
+                    <a href="#">数字传媒系</a><br>
+                    <a href="#">经济管理系</a><br>
+                    <a href="#">外语外贸系</a><br>
+                    <a href="#">设计艺术系</a><br>
+                </p>
+            </li>
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">党建工作</a>
+                <p class="linkContent">
+                    <a href="#">党建动态</a><br>
+                    <a href="#">党校培训</a><br>
+                    <a href="#">党务百科</a><br>
+                </p>
+            </li>
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">教务在线</a>
+                <p class="linkContent">
+                    <a href="#">教务教育</a><br>
+                    <a href="#">教务新闻</a><br>
+                    <a href="#">考试信息</a><br>
+                    <a href="#">资源建设</a><br>
+                    <a href="#">教务系统</a><br>
+                </p>
+            </li>
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">学工在线</a>
+                <p class="linkContent">
+                    <a href="#">团委</a><br>
+                    <a href="#">学生工作</a><br>
+                    <a href="#">资助</a><br>
+                    <a href="#">创新创业</a><br>
+                    <a href="#">学工系统</a><br>
+                </p>
+            </li>
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">招生信息</a>
+                <p class="linkContent">
+                    <a href="#">公示</a><br>
+                    <a href="#">招生信息网</a><br>
+                </p>
+            </li>
+            <li class="fastLinkList">
+                <a href="#" class="linkTop">就业信息</a>
+                <p class="linkContent">
+                    <a href="#">就业公告</a><br>
+                    <a href="#">就业信息</a><br>
+                    <a href="#">政策法规</a><br>
+                    <a href="#">校园招聘</a><br>
+                </p>
+            </li>
+        </ul>
+        <div class="QR-code">
+            <div class="weChat">
+                <img src="images/erweima.png" alt="" width="156" height="156">
+                <p>微信</p>
+            </div>
+            <div class="weChat">
+                <img src="images/erweima.png" alt="" width="156" height="156">
+                <p>微博</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="bottomContact">
+    <div class="bottomContactTxt">
+        地址：中国·福建省·厦门市集美文教区孙坂南路1199号 邮编：361024 <br>
+        电话:(0592)5531111 5591111 版权所有©厦门软件职业技术学院
+    </div>
+</div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="lib/jquery/jquery-1.11.0.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+
+<script src="js/mo.min.js"></script>
+<script src="js/click.js"></script>
+
+</body>
+</html>

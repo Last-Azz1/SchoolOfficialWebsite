@@ -1,0 +1,75 @@
+.news{
+    width: 1150px;
+    height: 1100px;
+    margin: 0 auto;
+}
+.title{
+    width: 300px;
+    height: 70px;
+    font-size: 18px;
+    line-height: 60px;
+    color: #818181;
+}
+.title a{
+    color: #818181;
+}
+.title a:hover{
+    color: #A80E14;
+}
+.newsTitle{
+    width: 100%;
+    height: 900px;
+    border-top: 3px solid #A80E14;
+    border-bottom: 3px solid #A80E14;
+    margin: 0 auto;
+}
+.listTitle{
+    font-size: 16px;
+    margin-top: 23px;
+    color: #4A4A4A;
+}
+.listTitle a{
+    color: #0f0f0f;
+}
+.listTitle a:hover{
+    color: #A80E14;
+}
+.iconColor{
+    color: #A80E14;
+}
+.time{
+    font-size: 14px;
+    margin-right: 20px;
+    float: right;
+}
+.pageBox{
+    width: 730px;
+    height: 70px;
+    margin: 35px auto 0px auto;
+}
+.upDown{
+    float: left;
+    width: 55px;
+    height: 35px;
+    border: 1px solid #818181;
+    border-radius: 4px;
+    margin-left: 15px;
+    line-height: 35px;
+    text-align: center;
+    color: #818181;
+}
+.num{
+    float: left;
+    width: 33px;
+    height: 35px;
+    border: 1px solid #818181;
+    border-radius: 4px;
+    margin-left: 15px;
+    line-height: 35px;
+    text-align: center;
+    color: #818181;
+}
+.page li:hover{
+   background: #A80E14;
+    color: #fff;
+}
